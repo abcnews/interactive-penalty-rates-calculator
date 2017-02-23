@@ -26,7 +26,7 @@ function recalculate() {
 		hours = parseFloat(doc.getElementById('prc-hours-on-sunday').value);
 	} catch (e) {}
 
-	if (!!industry && !!basis && !!rate && !!hours && rate > 10) {
+	if (!!industry && !!basis && !!rate && !!hours) {
 
 		doc.getElementById('prc-result').innerHTML = resultTemplate({
 			fastFood: industry === 'fast food',
