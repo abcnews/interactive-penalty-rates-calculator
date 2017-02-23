@@ -15,7 +15,10 @@
     "util-news-selectors": "git+ssh://git@stash.abc-dev.net.au:7999/news/util-news-selectors.git#master"
   },
   "devDependencies": {
-    "@abcnews/aunty": "2.0.x"
+    "@abcnews/aunty": "2.0.x",
+    "eslint": "^3.16.1",
+    "eslint-config-airbnb-base": "^11.1.0",
+    "eslint-plugin-import": "^2.2.0"
   },
   "aunty": {
     "type": "basic-story"
