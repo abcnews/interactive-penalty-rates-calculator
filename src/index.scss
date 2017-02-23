@@ -1,3 +1,63 @@
-.interactive-penalty-rates-calculator-ok {
-  color: green;
+
+#prc-container {
+
+	&.card .inner {
+		padding: 15px !important;
+		> div {
+			display: flex;
+			justify-content: space-between;
+			flex-wrap: wrap;
+
+			> div:not(#prc-result) {
+				flex: 0 0 50%;
+				width: 50%;
+				max-width: 50%;
+				margin-bottom: 10px;
+				box-sizing: border-box;
+				padding-right: 8px;
+			}
+
+			input[type="text"] {
+				padding: 3px;
+			}
+		}
+
+	}
+
+	:first-child {
+		margin-top: 0;
+	}
+
+	h3 label {
+		min-height: 2em;
+	}
+
+	label {
+		display: block;
+		padding: 3px;
+	}
+
+	#prc-result {
+		width: 100%;
+		:last-child {
+			margin-bottom: 0;
+		}
+	}
+}
+
+
+.embed-fragment #prc-container {
+	h3 {
+		font-size: 90%;
+		line-height: 1.15em;
+		margin-bottom: 3px;
+	}
+
+	label {
+		padding: 0;
+	}
+
+	input[type="text"] {
+		max-width: 100%;
+	}
 }

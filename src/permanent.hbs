@@ -1,0 +1,6 @@
+{{#if sunday}}
+<p>You will lose <strong>${{sunday.loss}}</strong> each Sunday you work. That’s because the Fair Work Commission has cut your Sunday penalty rate from <strong>{{sunday.rateBefore}}%</strong> to <strong>{{sunday.rateAfter}}%</strong> on Sundays.{{#if fastFood}} This is only for level one employees, which make up 92 per cent of all fast food workers.{{/if}}</p>
+{{else}}
+<p>Your pay won't change – your Sunday penalty rates are unaffected.</p>
+{{/if}}
+<p>If you work that many hours on a public holiday, you will lose <strong>${{holiday.loss}}</strong>. That’s because the Fair Work Commission has cut your penalty rate from <strong>{{holiday.rateBefore}}%</strong> to <strong>{{holiday.rateAfter}}%</strong>.{{#if fastFood}} This change affects all fast food award workers.{{/if}}</p>

@@ -1,0 +1,28 @@
+<div class="card" id="prc-container">
+	<div class="inner">
+		<h2>How much will you lose?</h2>
+		<div>
+			<div>
+				<h3>Which industry do you work in?</h3>
+				{{#each industries}}<label for="prc-industry-{{@key}}"><input type="radio" name="prc-industry" id="prc-industry-{{@key}}" value="{{@key}}"> {{@key}}</label>{{/each}}
+			</div>
+
+			<div>
+				<h3>How are you employed?</h3>
+				{{#each employmentBasis}}<label for="prc-employment-basis-{{id}}"><input type="radio" name="prc-employment-basis" id="prc-employment-basis-{{id}}" value="{{value}}"> {{label}}</label>{{/each}}
+			</div>
+			<div>
+				<h3><label for="prc-hourly-rate">What is your regular hourly rate <small>(exc. penalties)</small></label></h3>
+				<input class="form-control" type="text" id="prc-hourly-rate">
+			</div>
+			<div>
+				<h3><label for="prc-hours-on-sunday">How many hours do you work on a Sunday?</label></h3>
+				<input class="form-control" type="text" id="prc-hours-on-sunday">
+			</div>
+			<div>
+				<button class="btn btn-default">Calculate</button>
+			</div>
+			<div id="prc-result"></div>
+		</div>
+	</div>
+</div>
